@@ -1,4 +1,5 @@
  function Total() {
+    //parses that string(subjects), then returns an integer(score or marks obtained)
         var sub1 = parseInt(document.getElementById("Javascript").value);
         var sub2 = parseInt(document.getElementById("HTML").value);
         var sub3 = parseInt(document.getElementById("Python").value);
@@ -6,7 +7,7 @@
         var sub5 = parseInt(document.getElementById("React").value);
         var sub6 = parseInt(document.getElementById("SQL").value);
 
-
+//The score is set to a maximum of 100, which is in percentage
         if (sub1 > 100 || sub2 > 100 || sub3 > 100 || sub4 > 100 || sub5 > 100 || sub6 > 100) {
             alert("Please Enter Marks in range of 100");
         }
@@ -15,7 +16,7 @@
             document.getElementById("total").innerHTML = "Javascript:" + sub1 + "<br> HTML: " + sub2 + "<br> Python: " + sub3 + "<br> React: " + sub4 + "<br> Ruby: " + sub5 + "<br> Total: " + total;
         }
     }
-
+//finds the average of the marks obtained by retrieving input
     function Average() {
         var sub1 = parseInt(document.getElementById("Javascript").value);
         var sub2 = parseInt(document.getElementById("HTML").value);
